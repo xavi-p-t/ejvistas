@@ -10,17 +10,19 @@ public class Main extends Application {
     final int WIDOW_WIDTH = 800;
     final int WINDOW_HEIGHT = 600;
 
+    public static String nombre = "";
+    public static String edad = "";
+
     public static void main(String[] args) {
         launch(args);
     }
-
     @Override
     public void start(Stage stage) throws Exception {
 
         UtilsViews.parentContainer.setStyle("-fx-font: 14 arial;");
         UtilsViews.addView(getClass(), "View0", "/assets/view0.fxml");
         UtilsViews.addView(getClass(), "View1", "/assets/view1.fxml");
-        UtilsViews.addView(getClass(), "View2", "/assets/view2.fxml");
+        
 
         Scene scene = new Scene(UtilsViews.parentContainer);
 
