@@ -17,9 +17,12 @@ public class Controller1 {
 
 
     
-    public void setTexto(String nombre, String edad){
-        this.textoFinal.setText("Hola "+nombre+", tu edad es "+edad);
+    public void actualizarMensaje() {
+
+        textoFinal.setText("Hola "+Main.nombre+", tienes "+Main.edad+"años");
     }
+        
+    
    
     @FXML
     private void animateToView0(ActionEvent event) {

@@ -35,7 +35,10 @@ public class Controller0 {
         } else{
             Main.nombre = nombre.getText();
             Main.edad = edad.getText();
-            System.out.println(Main.nombre+" "+Main.edad);
+
+            Controller1 ctrl1 = (Controller1) UtilsViews.getController("View1");
+            ctrl1.actualizarMensaje();
+
             UtilsViews.setViewAnimating("View1");
         }  
     }
