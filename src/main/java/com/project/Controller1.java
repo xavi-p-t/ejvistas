@@ -19,7 +19,7 @@ public class Controller1 {
     
     public void actualizarMensaje() {
 
-        textoFinal.setText("Hola "+Main.nombre+", tienes "+Main.edad+"años");
+        textoFinal.setText("Hola "+Main.nombre+", tienes "+Main.edad+" años");
     }
         
     
